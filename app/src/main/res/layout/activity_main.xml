@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/tb"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Wallpaper"
+            android:textSize="23sp"
+            android:textColor="@color/card"
+            android:fontFamily="@font/gb"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_share_24"
+            android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb"
+        android:layout_above="@+id/bottom_navigation"
+        android:id="@+id/recyclerView"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:itemBackground="@color/colorPrimaryDark"
+    app:itemIconTint="@drawable/select"
+    app:itemTextColor="@drawable/select"
+    app:menu="@menu/bottom_menu"
+
+
+
+    />
+
+</RelativeLayout>

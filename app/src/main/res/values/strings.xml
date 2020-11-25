@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="admob_app_id">
+ca-app-pub-8634797256513727~8647915120</string>
+    <string name="admob_banner_id">
+ca-app-pub-8634797256513727/5981728491</string>
+    <string name="admob_interstitial_id">
+        ca-app-pub-8634797256513727/3591686100</string>
+
+    <string name="ad_attribution">Ad</string>
+
+    <string name="app_style_name"><u>"Let's Paint"</u></string>
+
+    <string name="test_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="test_appId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="test_interstitial"> ca-app-pub-3940256099942544/1033173712
+</string>
+
+</resources>

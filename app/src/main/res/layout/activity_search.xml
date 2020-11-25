@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/search"
+        android:background="@drawable/bg"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/searchText"
+            android:textColor="@color/card"
+            android:textColorHint="@color/card"
+            android:paddingLeft="10dp"
+            android:autofillHints="love"
+
+            android:hint="Search Here..ex.Love                  "
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/searchBtn"
+           android:drawableRight="@drawable/ic_baseline_search_24_white"
+            android:text="search"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/card"
+
+            android:layout_height="30dp"></Button>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/select"
+        app:itemTextColor="@drawable/select"
+        app:menu="@menu/bottom_menu"
+
+
+
+        />
+
+</RelativeLayout>
